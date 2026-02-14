@@ -27,3 +27,6 @@ Typical columns in the dataset:
 ```bash
 pip install -r requirements.txt
 jupyter notebook "VIDEO GAMES SALES.ipynb"
+
+## License
+MIT License
