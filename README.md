@@ -8,9 +8,7 @@ Typical columns in the dataset:
 - **Name**, **Platform**, **Year**, **Genre**, **Publisher**
 - **NA_Sales**, **EU_Sales**, **JP_Sales**, **Other_Sales**, **Global_Sales** *(target)*
 
-> Note: If the dataset file cannot be shared publicly, include a short note on where to download it and place it under `data/`.
-
-## Approach
+## Approach 
 - Data loading and basic profiling
 - Missing value handling
 - Exploratory Data Analysis (EDA)
@@ -19,14 +17,19 @@ Typical columns in the dataset:
 - Evaluation (e.g., RMSE / R²)
 
 ## Repository Structure
-- `VIDEO GAMES SALES.ipynb` — notebook with EDA and modeling
-- `requirements.txt` — dependencies
-- `README.md` — project summary
+- video_game_sales_analysis.ipynb — notebook with EDA and modeling
+- requirements.txt — dependencies
+- README.md — project summary
 
 ## How to Run
-```bash
 pip install -r requirements.txt
-jupyter notebook "VIDEO GAMES SALES.ipynb"
+jupyter notebook "video_game_sales_analysis.ipynb"
+
+## Results
+- Model: Random Forest Regressor (depth tuning)
+- Best test R²: 0.9018 (depth=10)
+- Train R² (best): 0.9458
+- Generalization gap (train-test): 0.0440
 
 ## License
 MIT License
